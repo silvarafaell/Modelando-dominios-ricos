@@ -10,10 +10,10 @@ namespace PaymentContext.Tests
         [TestMethod]
         public void AdicionarAssinatura()
         {
-            var subscription = new Subscription(null);
-            var student = new Student("Rafael", "pereira", "12345678912", "francisco_rafael@hotmail.com.br");
-            //student.subscriptions.Add(subscription);//colocando assinatura, com IReadOnlyCollection é obrigado a colocar AddSubscription
-            student.AddSubscription(subscription);
+            // var subscription = new Subscription(null);
+            // var student = new Student("Rafael", "pereira", "12345678912", "francisco_rafael@hotmail.com.br");
+            // //student.subscriptions.Add(subscription);//colocando assinatura, com IReadOnlyCollection é obrigado a colocar AddSubscription
+            // student.AddSubscription(subscription);
         }
     }
 }
