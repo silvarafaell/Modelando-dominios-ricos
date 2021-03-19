@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using AYMENTCONTEXT.Domain.Entities;
@@ -15,6 +16,13 @@ namespace PAYMENTCONTEXT.Domain.Entities
             Document = document;
             Email = email;
             _subscriptions = new List<Subscription>();
+
+            AddNotifications(name, document, email);
+        }
+
+        private void AddNotifications(Name name, Document document, string email)
+        {
+            throw new NotImplementedException();
         }
 
         public Name Name { get; private set; }
