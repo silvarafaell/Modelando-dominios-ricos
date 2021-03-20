@@ -29,8 +29,11 @@ namespace PAYMENTCONTEXT.Domain.Entities
         public Name Name { get; private set; }
         public Document Document { get; private set; }
         public string Email { get; private set; }
-        public Adress Address { get; private set; }
+        public Address Address { get; private set; }
         public IReadOnlyCollection<Subscription> subscriptions { get { return _subscriptions.ToArray(); } }
+
+        public bool Invalid { get; set; }
+        public bool Valid { get; set; }
 
         public void AddSubscription(Subscription subscription)
         {

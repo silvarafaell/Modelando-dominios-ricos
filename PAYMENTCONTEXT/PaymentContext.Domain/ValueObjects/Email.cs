@@ -6,13 +6,12 @@ namespace PaymentContext.Domain.ValueObjects
     public class Email : ValueObject
     {
         public Email(string address)
-
         {
             Address = address;
 
             AddNotifications(new Contract()
-            .Requires()
-            .isEmail(Address, "Email.Adress", "E-mail invalido")
+                .Requires()
+                .IsEmail(Address, "Email.Address", "E-mail inválido")
             );
         }
 

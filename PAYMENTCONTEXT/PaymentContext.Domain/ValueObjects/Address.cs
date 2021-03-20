@@ -3,13 +3,13 @@ using PaymentContext.Shared.ValueObjects;
 
 namespace PaymentContext.Domain.ValueObjects
 {
-    public class Adress : ValueObject
+    public class Address : ValueObject
     {
-        public Adress(int street, int number, int neigtborhood, int city, int state, int country, int zipCode)
+        public Address(string street, string number, string neighborhood, string city, string state, string country, string zipCode)
         {
             Street = street;
             Number = number;
-            Neigtborhood = neigtborhood;
+            Neighborhood = neighborhood;
             City = city;
             State = state;
             Country = country;
@@ -21,13 +21,13 @@ namespace PaymentContext.Domain.ValueObjects
             );
         }
 
-        public int Street { get; private set; }
-        public int Number { get; private set; }
-        public int Neigtborhood { get; private set; }
-        public int City { get; private set; }
-        public int State { get; private set; }
-        public int Country { get; private set; }
-        public int ZipCode { get; private set; }
+        public string Street { get; private set; }
+        public string Number { get; private set; }
+        public string Neighborhood { get; private set; }
+        public string City { get; private set; }
+        public string State { get; private set; }
+        public string Country { get; private set; }
+        public string ZipCode { get; private set; }
     }
 
 }
