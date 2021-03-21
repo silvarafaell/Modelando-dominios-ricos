@@ -33,6 +33,7 @@ namespace PaymentContext.Domain.Commands
         public string Country { get; set; }
         public string ZipCode { get; set; }
         public bool Valid { get; set; }
+        public bool Invalid { get; internal set; }
 
         //validações e não regra de negocio
         public void Validate()
